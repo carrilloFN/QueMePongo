@@ -31,3 +31,5 @@ target/**
 
 # Etc files
 *.bkp
+*.dtmp
+*.tmp
