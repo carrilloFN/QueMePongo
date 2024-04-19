@@ -28,3 +28,6 @@ target/**
 # IJ files
 *.iml
 .idea/**
+
+# Etc files
+*.bkp
