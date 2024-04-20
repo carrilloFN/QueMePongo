@@ -1,9 +1,17 @@
 package ar.edu.utn.frba.dds.domain;
 
+import ar.edu.utn.frba.dds.exception.CategoriaNullException;
+
 public enum Tipo {
-  Zapato
+  ZAPATO(Categoria.CALZADO),
+  CAMISA(Categoria.SUPERIOR),
+  REMERA(Categoria.SUPERIOR),
+  PANTALON(Categoria.INFERIOR);
 
-  public Tipo(Categoria categoria){
+  private Categoria categoria;
 
+  Tipo(Categoria categoria){
+    if(categoria == null) throw new CategoriaNullException("Categoria debe estar definida");
+    this.categoria = categoria;
   }
 }

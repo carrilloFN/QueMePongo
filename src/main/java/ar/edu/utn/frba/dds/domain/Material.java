@@ -1,5 +1,5 @@
 package ar.edu.utn.frba.dds.domain;
 
 public enum Material {
-  Tela, Algodon, Cuero
+  MODAL, ALGODON, CUERO, VAQUETA, POLIESTER, LANA
 }
