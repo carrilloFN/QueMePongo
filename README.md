@@ -9,7 +9,8 @@ Asimismo, se busca que estos atuendos se adecuen de la mejor forma a
 las sensibilidades particulares respecto de dichos factores de cada 
 usuario y a sus gustos en el aspecto estético.
 
-## Primera Iteración
+<details> <summary> <b>Primera Iteración</b></summary>
+
 > Requerimiento principal:
 Como usuario de QueMePongo quiero poder cargar prendas válidas 
 para generar atuendos con ellas
@@ -34,5 +35,6 @@ representar en ella un color secundario, pero se decidió que su optabilidad ser
 por lo que este requerimiento se atacará en la implementación definiendo un constructor con estas validaciones
 - El requerimiento _**7**_ indica que están relacionados el _**TIPO**_ y _**CATEGORIA**_ de una prenda, por lo que
 para mantener cierta consistencia se decidió que un _**TIPO**_ conozca _**SU CATEGORIA**_
+</details>
 
 ![Diagrama de clases](/Diagrams/DDC.svg)
