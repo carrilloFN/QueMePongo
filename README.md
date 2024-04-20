@@ -37,4 +37,33 @@ por lo que este requerimiento se atacará en la implementación definiendo un co
 para mantener cierta consistencia se decidió que un _**TIPO**_ conozca _**SU CATEGORIA**_
 </details>
 
+<details> <summary> <b>Segunda Iteración</b></summary>
+
+> Requerimiento principal:
+Como usuario de QuéMePongo, quiero poder cargar prendas válidas 
+para generar atuendos con ellas.
+
+### Como usuario de QueMePongo
+1. Quiero especificar qué trama tiene el material de una prenda: lisa, rayada, con lunares, a cuadros o un estampado.
+2. Quiero crear una prenda especificando primero de qué tipo es.
+3. Quiero crear una prenda especificando en segundo lugar los aspectos relacionados al material.
+   (colores, material, trama, etc), para evitar elegir materiales inconsistentes con el tipo de prenda.
+4. Quiero guardar un borrador de la última prenda que empecé a cargar para continuar después.
+5. Quiero poder indicar ninguna trama para una tela y que por defecto ésta sea lisa.
+6. Quiero poder recibir sugerencias de uniformes armados.
+7. Quiero que un uniforme siempre conste de una prenda superior, inferior y un calzado.
+8. Como administrador de QueMePongo, quiero poder configurar diferentes uniformes para distintas instituciones.
+   (Ej: para el colegio San Juan debe ser una chomba verde de piqué, un pantalón de acetato gris y zapatillas 
+blancas, mientras que para el Instituto Johnson siempre será una camisa blanca, pantalón de vestir negro 
+y zapatos negros)
+
+
+### Desiciones de Diseño
+- Requerimiento 1: Se agregó a la definición de una _**PRENDA**_ la habilidad de poseer una trama como parte de su estado.
+- De los requerimientos 2,3 y 4 se desprende la idea de _**ARMAR UNA PRENDA POR PARTES**_ por lo que se definió una clase a 
+modo builder/borrador que es quien nos brindará esta funcionalidad y es quien creará una Prenda, permitiendo desligar el construido
+o la instanciación de una Prenda de esta clase, teniendo este borrador dediaco a esta funcionalidad.
+
+</details>
+
 ![Diagrama de clases](/Diagrams/DDC.svg)
