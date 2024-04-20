@@ -11,7 +11,7 @@ public enum Tipo {
   private Categoria categoria;
 
   Tipo(Categoria categoria){
-    if(categoria == null) throw new CategoriaNullException("Categoria debe estar definida");
+    if(categoria == null) throw new CategoriaNullException("La categoria NO puede ser null");
     this.categoria = categoria;
   }
 }
