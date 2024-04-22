@@ -1,21 +1,16 @@
 package ar.edu.utn.frba.dds.domain;
 
-import ar.edu.utn.frba.dds.exception.ColorNullException;
-import ar.edu.utn.frba.dds.exception.MaterialNullException;
-import ar.edu.utn.frba.dds.exception.TipoNullException;
-
 public class Prenda {
   private Tipo tipo;
+  private Trama trama;
   private Material material;
   private Color colorPrimario;
   private Color colorSecundario;
 
-  public Prenda(Tipo tipo, Material material, Color colorPrimario, Color colorSecundario) {
-    if(tipo == null) throw new TipoNullException("El tipo NO puede ser null");
-    this.material = material;
-    if(material == null) throw new MaterialNullException("El material NO puede ser null");
+  public Prenda(Tipo tipo, Trama trama, Material material, Color colorPrimario, Color colorSecundario) {
     this.tipo = tipo;
-    if(colorPrimario == null) throw new ColorNullException("El color primario NO puede ser null");
+    this.trama = trama;
+    this.material = material;
     this.colorPrimario = colorPrimario;
     this.colorSecundario = colorSecundario;
   }
@@ -34,5 +29,9 @@ public class Prenda {
 
   public Color getColorSecundario() {
     return colorSecundario;
+  }
+
+  public Trama getTrama() {
+    return trama;
   }
 }

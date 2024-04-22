@@ -9,7 +9,7 @@ import ar.edu.utn.frba.dds.exception.TipoNullException;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-class PrendaTest {
+class BorradorPrendaTest {
 
   @DisplayName("Crear una prenda sin tipo arroja un TipoNullException")
   @Test

@@ -40,7 +40,7 @@ para mantener cierta consistencia se decidió que un _**TIPO**_ conozca _**SU CA
 <details> <summary> <b>Segunda Iteración</b></summary>
 
 > Requerimiento principal:
-Como usuario de QuéMePongo, quiero poder cargar prendas válidas 
+Como usuario de QueMePongo, quiero poder cargar prendas válidas 
 para generar atuendos con ellas.
 
 ### Como usuario de QueMePongo
@@ -59,10 +59,10 @@ y zapatos negros)
 
 
 ### Desiciones de Diseño
-- Requerimiento 1: Se agregó a la definición de una _**PRENDA**_ la habilidad de poseer una trama como parte de su estado.
+- Requerimiento 1: Se agregó a la definición de una _**PRENDA**_ una trama como parte de su estado.
 - De los requerimientos 2,3 y 4 se desprende la idea de _**ARMAR UNA PRENDA POR PARTES**_ por lo que se definió una clase a 
-modo builder/borrador que es quien nos brindará esta funcionalidad y es quien creará una Prenda, permitiendo desligar el construido
-o la instanciación de una Prenda de esta clase, teniendo este borrador dediaco a esta funcionalidad.
+modo builder/borrador que es quien nos brindará esta funcionalidad y es quien creará una Prenda, permitiendo desligar la 
+construcción de una Prenda de esta clase, teniendo este borrador dediaco a esta funcionalidad.
 
 </details>
 
