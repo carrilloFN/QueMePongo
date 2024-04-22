@@ -12,29 +12,29 @@ public class BorradorPrenda {
   private Color colorPrimario;
   private Color colorSecundario;
 
-  public BorradorPrenda(){}
+  public BorradorPrenda() {}
 
-  public BorradorPrenda tipo(Tipo tipo){
+  public BorradorPrenda tipo(Tipo tipo) {
     this.tipo = tipo;
     return this;
   }
 
-  public BorradorPrenda trama(Trama trama){
+  public BorradorPrenda trama(Trama trama) {
     this.trama = trama;
     return this;
   }
 
-  public BorradorPrenda material(Material material){
+  public BorradorPrenda material(Material material) {
     this.material = material;
     return this;
   }
 
-  public BorradorPrenda colorPrimario(Color colorPrimario){
+  public BorradorPrenda colorPrimario(Color colorPrimario) {
     this.colorPrimario = colorPrimario;
     return this;
   }
 
-  public BorradorPrenda colorSecundario(Color colorSecundario){
+  public BorradorPrenda colorSecundario(Color colorSecundario) {
     this.colorSecundario = colorSecundario;
     return this;
   }
@@ -44,11 +44,19 @@ public class BorradorPrenda {
     return new Prenda(tipo, trama, material, colorPrimario, colorSecundario);
   }
 
-  public void validarBorrador(){
-    if(this.tipo == null) throw new TipoNullException("El tipo NO puede ser null");
-    if(this.trama == null) throw new TramaNullException("La trama NO puede ser null");
-    if(this.material == null) throw new MaterialNullException("El material NO puede ser null");
-    if(this.colorPrimario == null) throw new ColorNullException("El color primario NO puede ser null");
+  public void validarBorrador() {
+    if (this.tipo == null) {
+      throw new TipoNullException("El tipo NO puede ser null");
+    }
+    if (this.trama == null) {
+      throw new TramaNullException("La trama NO puede ser null");
+    }
+    if (this.material == null) {
+      throw new MaterialNullException("El material NO puede ser null");
+    }
+    if (this.colorPrimario == null) {
+      throw new ColorNullException("El color primario NO puede ser null");
+    }
   }
 
   public Tipo getTipo() {

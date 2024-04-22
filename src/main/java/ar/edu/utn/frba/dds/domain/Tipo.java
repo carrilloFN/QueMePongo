@@ -10,8 +10,10 @@ public enum Tipo {
 
   private Categoria categoria;
 
-  Tipo(Categoria categoria){
-    if(categoria == null) throw new CategoriaNullException("La categoria NO puede ser null");
+  Tipo(Categoria categoria) {
+    if (categoria == null) {
+      throw new CategoriaNullException("La categoria NO puede ser null");
+    }
     this.categoria = categoria;
   }
 }
